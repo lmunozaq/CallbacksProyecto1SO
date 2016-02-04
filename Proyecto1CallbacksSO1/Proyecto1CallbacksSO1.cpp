@@ -50,9 +50,9 @@ int ClaseB::function2(int param)
 	return 3;
 }
 
-void ClaseB::setCallBack(int (ClaseB::*&cb)(int))
+void ClaseB::setCallBack(int (ClaseB::*&callclaseb)(int))
 {
-	cb = &ClaseB::function2;
+	callclaseb = &ClaseB::function2;
 }
 
 int main()
